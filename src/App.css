@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: 250px;
+}
+
+.feed {
+  flex: 1;
+  overflow-y: auto;
+  margin-left: 250px; /* Add margin to the left to accommodate the width of the sidebar */
+  width: calc(
+    100% - 250px
+  ); /* Adjust the width to account for the sidebar width */
+}
